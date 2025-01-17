@@ -26,14 +26,19 @@
             <div class="contacts">
                 <ul>
                     <li class="email">
-                        <li>+94 75 71 98138</li>
                         <a
                             href="mailto:dev.j.a@gmail.com"
-                            style="color: inherit; text-decoration: none"
+                            style="
+                                color: inherit;
+                                text-decoration: none;
+                                transition: color 0.3s;
+                            "
+                            onmouseover="this.style.color='#ff7200';"
+                            onmouseout="this.style.color='inherit';"
                             >dev.januda@gmail.com</a
                         >
                     </li>
-                    
+                    <li class="phone">+94 75 71 98138</li>
                     <li>Kegalle, Sri Lanka</li>
                 </ul>
                 <div class="icons">
@@ -80,12 +85,19 @@
                 <span>Dark</span>
             </div> -->
             <div class="leftbottom">
-                <p><span>© 2025 Januda</span></p> 
-                
+                <p><span>© 2025 Januda</span></p>
             </div>
             <div class="call2act">
-                <button class="interactive-hover-button-1"><a href="" style="color: inherit; text-decoration: none">Portfolio</a></button>
-                <button class="interactive-hover-button-2"><a href="" style="color: inherit; text-decoration: none">About Me</a></button>
+                <button class="interactive-hover-button-1">
+                    <a href="" style="color: inherit; text-decoration: none"
+                        >About Me</a
+                    >
+                </button>
+                <button class="interactive-hover-button-2">
+                    <a href="" style="color: inherit; text-decoration: none"
+                        >Portfolio</a
+                    >
+                </button>
             </div>
         </div>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

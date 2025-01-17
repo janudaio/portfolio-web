@@ -1,28 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 
+/* Default styles for mobile */
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.main {
+    padding: 20px;
+}
+
+.contacts {
+    font-size: 14px;
+}
+
+/* Styles for tablets */
+@media (min-width: 600px) {
+    .main {
+        padding: 40px;
+    }
+
+    .contacts {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .hello {
+        font-size: 120px; /* Adjust font size for tablets */
+    }
+}
+
+/* Styles for desktops */
+@media (min-width: 1024px) {
+    .main {
+        padding: 60px;
+    }
+
+    .contacts {
+        font-size: 18px;
+    }
+
+    .icon {
+        font-size: 50px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .hello {
+        font-size: 240px; /* Adjust font size for desktops */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .main {
-    width: 100%;
+    /* width: 100%; */
     background: #0d0d0d;
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 100vh; /* Use viewport height */
 }
 
 .contacts {
     margin: 0;
     padding: 0;
-    line-height: 26px;
+    line-height: 1.6; /* Use relative line height */
     list-style: none;
     position: absolute;
-    left: 30px;
-    top: 23px;
-    font-size: 16px;
-    font-family: 'Outfit', sans-serif;
+    left: 2%; /* Use percentages */
+    top: 2%; /* Use percentages */
+    font-size: 1rem; /* Use relative units */
 }
 
 .contacts ul {
@@ -33,6 +87,9 @@
     list-style: none;
 }
 
+.contacts ul .phone {
+    letter-spacing: 1.4px;
+}
 .contacts ul a {
     text-decoration: none;
 }
@@ -45,7 +102,8 @@
 .icons ion-icon {
     color: #fff;
     font-size: 22px;
-    padding-left: 5px;
+    padding-right: 9px;
+
     padding-top: 5px;
     transition: 0.4s ease;
 }
@@ -181,21 +239,22 @@
     margin: 4px 2px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: fixed; /* Fixed position */
+    position: absolute; /* Absolute position */
     bottom: 25px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
 }
 
 .interactive-hover-button-1:hover {
-    background-color: #ff7200; /* Darker green */
+    background-color: rgb(250, 250, 250);
+    color: #000; /* Darker green */
 }
 
 .interactive-hover-button-2 {
     font-family: 'outfit', sans-serif;
-    background-color: #333; /* Green */
+    background-color: #ff7200; /* Green */
     border: none;
     color: rgb(255, 255, 255);
-    padding: 20px 75px;
+    padding: 20px 83px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -203,13 +262,14 @@
     margin: 4px 2px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: fixed; /* Fixed position */
+    position: absolute; /* Fixed position */
     bottom: 98px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
 }
 
 .interactive-hover-button-2:hover {
-    background-color: #ff7200; /* Darker green */
+    background-color: #ffffff; /* Darker green */
+    color: #000;
 }
 
 .navmenu {
