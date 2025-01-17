@@ -23,27 +23,30 @@
 }
 
 .icon {
-    width: 200px;
     float: left;
+    width: 200px;
     height: 70px;
     margin-left: -25px;
 }
 
 .logo {
+    display: flex;
     color: orange;
     font-size: 35px;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 22px;
-    float: left;
+    padding-left: 30px;
     padding-top: 20px;
+    float: left;
+    margin: 0 auto;
 }
 
-.menu {
-    width: 400px;
+/* .menu {
     float: left;
+    width: 400px;
     height: 70px;
     margin-top: 2px;
-}
+} */
 
 ul {
     float: left;
@@ -72,8 +75,8 @@ ul li a:hover {
 }
 
 .search {
-    width: 330px;
     float: left;
+    width: 330px;
     margin-left: 425px;
     margin-top: 8px;
 }
@@ -201,6 +204,7 @@ ul li a:hover {
     border-right: none;
     border-left: none;
     color: #fff;
+    text-align: center;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;
