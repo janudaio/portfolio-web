@@ -3,6 +3,8 @@
 /* Base styles */
 body {
     font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     background-color: #0d0d0d;
@@ -53,10 +55,10 @@ body {
     }
 }
 
-.title h1 {
+/* .title h1 {
     font-size: 150px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 0;
     text-align: center;
     color: #fff;
 }
@@ -65,4 +67,19 @@ body {
     font-size: 18px;
     text-align: center;
     color: #fff;
+} */
+
+.main-section {
+    z-index: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.portfolio-grid {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
